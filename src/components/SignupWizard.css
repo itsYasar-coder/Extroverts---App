@@ -1,0 +1,261 @@
+.signup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  z-index: 9999;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.wizard-content {
+  width: 100%;
+}
+
+
+.wizard-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo-e {
+  font-family: serif; 
+  font-size: 2.9rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-dot {
+  font-size: 1.5rem;
+  margin-left: 2px;
+  margin-top: -26px;
+}
+
+.step-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  display: block; 
+}
+
+.custom-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+}
+
+.custom-input:focus {
+  border-color: #FFF;
+}
+
+.input-error {
+  border-color: #ff4444 !important;
+}
+
+.error-text {
+  color: #ff4444;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.custom-checkbox {
+  width: 15px;
+  height: 15px;
+  background-color: transparent !important;
+  border: 1.5px solid #ffffff !important;
+  border-radius: 4px !important;
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.custom-checkbox:checked {
+  background-color: #ffffff !important;
+}
+
+.custom-checkbox:checked::after {
+  content: '✔';
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.checkbox-text {
+  font-size: 0.85rem;
+  color: #FFF;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.step-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.otp-input {
+  width: 45px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #444;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.otp-input:focus {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.resend-text {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-bottom: 35px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.resend-text.disabled {
+  color: #666666;
+  cursor: default;
+}
+
+.resend-text.active {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.action-buttons-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.btn-secondary {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.helper-text {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.highlight-text {
+  color: #888;
+}
+
+
+@media (min-width: 768px) {
+  .signup-wrapper {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .wizard-header,
+  .wizard-content {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .otp-container {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .action-buttons-column {
+    margin-top: 40px;
+  }
+
+  .helper-text {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,126 @@
+.step4-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step4-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.step4-getting-ready-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.name-step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+
+.name-input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.name-input-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.name-custom-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+}
+
+.name-custom-input:focus {
+  border-color: #FFF;
+}
+
+.name-input-error {
+  border-color: #ff4444 !important;
+}
+
+.name-error-text {
+  color: #ff4444;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+}
+
+.name-helper-text {
+  margin-top: -8px;
+  font-size: 0.75rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.name-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.name-btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.name-btn-secondary {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .name-action-buttons {
+    margin-top: 40px;
+  }
+}

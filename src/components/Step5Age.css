@@ -1,0 +1,230 @@
+.step5-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step5-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.step5-getting-ready-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.step5-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+
+.step5-input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.step5-input-label {
+  display: block; 
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.step5-custom-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.step5-custom-input:focus {
+  border-color: #FFF;
+}
+
+.step5-helper-text {
+  margin-top: -8px;
+  font-size: 0.75rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.step5-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.step5-btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.step5-btn-secondary {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.step5-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.step5-modal-content {
+  width: 100%;
+  max-width: 440px; 
+  background-color: #0f0f0f;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 20px 24px 40px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.step5-modal-handle {
+  width: 40px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  align-self: center;
+  margin-bottom: 24px;
+}
+
+.step5-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.step5-modal-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.step5-modal-close {
+  font-size: 1.8rem;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+.step5-dob-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.step5-dob-input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  background-color: #1a1a1c;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  outline: none;
+  padding: 0;
+}
+
+.step5-dob-input:focus {
+  border-color: #fff;
+}
+
+.step5-dob-input.year {
+  flex: 1.2;
+}
+
+.step5-error-text {
+  color: #ff4444;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.step5-modal-proceed-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .step5-action-buttons {
+    margin-top: 40px; 
+  }
+}

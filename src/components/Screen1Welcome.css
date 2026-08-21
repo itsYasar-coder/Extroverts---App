@@ -1,0 +1,90 @@
+.welcome-screen {
+  align-items: center; 
+}
+
+.logo-section {
+  margin-top: 12vh;
+  margin-bottom: auto; 
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-logo {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  position: relative;
+  margin: 0;
+  line-height: 1;
+}
+
+.app-logo::after {
+  content: "•";
+  position: absolute;
+  top: -10px;
+  right: -22px;
+  font-size: 3.5rem;
+  color: #FFFFFF;
+}
+
+.content-section {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.app-tagline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-top: -8px;
+}
+
+.warning-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  max-width: 320px; 
+  margin: 0 auto;
+}
+
+.warning-label {
+  color: #FF5A5A;
+  font-weight: 600;
+}
+
+.action-section {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.primary-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  height: 45px;
+  width: 100%; 
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-bottom: 90px;
+  margin-top: -45px;
+}
+
+.primary-btn:active {
+  opacity: 0.8;
+}

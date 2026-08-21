@@ -1,0 +1,77 @@
+.nested-inner-card {
+    background-color: #000000;
+    border-radius: 16px;
+    border: 1px solid #222222;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.inner-gradient-bg {
+    width: 100%;
+    height: 85px; 
+    background: linear-gradient(135deg, #ff7e79 0%, #b9758e 50%, #8c768e 100%);
+}
+
+.nested-card-content {
+    padding: 12px; 
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.small-title {
+    font-size: 1.3rem; 
+}
+
+.small-host {
+    font-size: 0.95rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 12px; 
+}
+
+.nested-grid {
+    height: 45px;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.fade-to-black-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to bottom, transparent 0%, #000000 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.party-jam-compact .margin-bottom-large { margin-bottom: 10px !important; }
+.party-jam-compact .event-details-box { margin-bottom: 12px !important; }
+.party-jam-compact .detail-item { padding: 10px 14px !important; }
+.party-jam-compact .details-bottom-row { padding: 10px 14px !important; }
+.party-jam-compact .join-btn { padding: 12px !important; }
+
+
+
+.custom-badge-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-badge-img {
+    width: 34px; 
+    height: 34px;
+    object-fit: contain;
+}
+
+.custom-badge-wrapper.small .custom-badge-img {
+    width: 24px;
+    height: 24px;
+}

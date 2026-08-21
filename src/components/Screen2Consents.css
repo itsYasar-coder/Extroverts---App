@@ -1,0 +1,212 @@
+.consents-page-wrapper {
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.consents-container { 
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; 
+  box-sizing: border-box;
+}
+
+.consent-logo-header {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.consent-app-logo {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 900;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.consent-app-logo::after {
+  content: "•";
+  position: absolute;
+  top: -2px;
+  right: -12px;
+  font-size: 1.5rem;
+}
+
+.consent-text-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.consent-paragraph {
+  font-size: 1.10rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left; 
+  text-transform: uppercase;
+  margin-top: -47px;
+  letter-spacing: 0.02em;
+}
+
+.consent-highlight {
+  color: #A067E6;
+}
+
+.consent-footer-action {
+  width: 100%;
+  margin-bottom: 35px;
+  margin-top: -55px;
+  padding-bottom: 20px;
+}
+
+.consent-proceed-info {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.consent-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  height: 42px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.consent-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.terms-link {
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.terms-link:hover {
+  color: #B47CFF;
+}
+
+
+@media (min-width: 768px) {
+  .consents-page-wrapper {
+    align-items: center;
+    justify-content: center;
+    background-color: #050507;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.18) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(15, 10, 25, 0.9) 0%, #050507 80%);
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .consents-container {
+    max-width: 540px;
+    min-height: auto;
+    background: linear-gradient(145deg, rgba(22, 20, 29, 0.85), rgba(12, 10, 16, 0.95));
+    border: 1px solid rgba(168, 85, 247, 0.22);
+    border-radius: 24px;
+    padding: 38px 42px;
+    box-shadow: 
+      0 25px 60px -15px rgba(0, 0, 0, 0.9),
+      0 0 35px -5px rgba(139, 92, 246, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+  }
+
+  .consent-logo-header {
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .consent-app-logo {
+    font-size: 2.2rem !important;
+    letter-spacing: -1px;
+  }
+
+  .consent-text-body {
+    flex: unset;
+    display: block;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 24px;
+  }
+
+  .consent-paragraph {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    letter-spacing: 0.035em;
+    margin-top: 0;
+    color: #e2e2e8;
+    font-weight: 600;
+  }
+
+  .consent-highlight {
+    color: #c084fc;
+    font-weight: 800;
+    text-shadow: 0 0 16px rgba(192, 132, 252, 0.6);
+  }
+
+  .consent-footer-action {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .consent-proceed-info {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  .terms-link {
+    color: #e2e8f0;
+    font-weight: 600;
+  }
+
+  .consent-btn {
+    height: 48px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+    transition: all 0.25s ease;
+  }
+
+  .consent-btn:hover {
+    background: #f8fafc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.35);
+  }
+}

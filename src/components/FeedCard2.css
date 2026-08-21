@@ -1,0 +1,15 @@
+.event-description-text {
+    padding: 10px 0;
+}
+
+.event-description-text p {
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.location-highlight {
+    color: #A067E6;
+}
